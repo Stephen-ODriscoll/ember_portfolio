@@ -1,0 +1,11 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome</h2>
+  <p>Feel free to browse my showcase of work below.</p>
+</div>
+
+{{#each this.model as |rentalUnit|}}
+  <RentalListing @rental={{rentalUnit}} />
+{{/each}}
+
+{{outlet}}

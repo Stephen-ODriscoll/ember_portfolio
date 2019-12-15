@@ -1,0 +1,45 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Services</h2>
+    {{#each this.model as |languageUnit|}}
+    <ListServices @language={{languageUnit}} />
+    {{/each}}
+    <br/>
+    <table style="width:80%">
+        <tr>
+            <th class="table-title">Language</th>
+            <th class="table-title">Description</th>
+            <th class="table-title">Price</th>
+        </tr>
+        <tr>
+            <th>C++</th>
+            <th>Write a C++ application</th>
+            <th>€200</th>
+        </tr>
+        <tr>
+            <th>Python</th>
+            <th>Write a Python application</th>
+            <th>€500</th>
+        </tr>
+        <tr>
+            <th>Nothing</th>
+            <th>Do nothing for a while</th>
+            <th>€1000</th>
+        </tr>
+    </table>
+    <br/><br/><br/><br/>
+  <h2>Skills</h2>
+    <div class="cpp">
+        C++
+    </div>
+    <br/>
+    <div class="python">
+        Python
+    </div>
+    <br/>
+    <div class="java">
+        Java
+    </div>
+</div>
+
+{{outlet}}
