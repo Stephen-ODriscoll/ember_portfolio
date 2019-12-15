@@ -4,8 +4,8 @@
   <p>Feel free to browse my showcase of work below.</p>
 </div>
 
-{{#each this.model as |rentalUnit|}}
-  <RentalListing @rental={{rentalUnit}} />
+{{#each this.model as |projectUnit|}}
+  <ProjectListing @project={{projectUnit}} />
 {{/each}}
 
 {{outlet}}

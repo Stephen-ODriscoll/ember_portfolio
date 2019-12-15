@@ -1,8 +1,8 @@
 export default function() {
   this.namespace = '/api';
 
-  let rentals = [{
-        type: 'rentals',
+  let projects = [{
+        type: 'projects',
         id: 'grand-old-mansion',
         attributes: {
           title: 'React Bookfair Website',
@@ -14,7 +14,7 @@ export default function() {
           description: "A bookfair website created as part of my first project for Front End Development."
         }
       }, {
-        type: 'rentals',
+        type: 'projects',
         id: 'urban-living',
         attributes: {
           title: 'Reverse Auction',
@@ -26,7 +26,7 @@ export default function() {
           description: "A revese auction site created as part of App Development Frameworks using Spring"
         }
       }, {
-        type: 'rentals',
+        type: 'projects',
         id: 'downtown-charm',
         attributes: {
           title: 'Some Kind of Robot',
@@ -38,7 +38,7 @@ export default function() {
           description: "Just a robot, might take over the world some day. Who knows"
         }
       }]
-    this.get('/rentals', function(db, request) {
-      return { data: rentals };
+    this.get('/projects', function(db, request) {
+      return { data: projects };
     });
   }
